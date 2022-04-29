@@ -1,0 +1,64 @@
+.wrapper {
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 4rem;
+  text-transform: uppercase;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapperInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.black {
+  background-color: #1b1a1c;
+  color: #eae6e6;
+}
+
+.white {
+  background-color: #eae6e6;
+}
+
+.line,
+.lineR {
+  flex-shrink: 0;
+  margin: 0;
+  min-height: 100%;
+  white-space: nowrap;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  writing-mode: vertical-rl;
+  font-family: 'Gugi', cursive;
+
+}
+
+.line {
+  animation-name: runningDown;
+}
+
+.lineR {
+  animation-name: runningUp;
+}
+
+@keyframes runningDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes runningUp {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
