@@ -1,13 +1,14 @@
-.wrapper {
+.runningLine {
   overflow: hidden;
   font-weight: 600;
   font-size: 4rem;
   text-transform: uppercase;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  display: flex;
 }
 
-.wrapperInner {
+.runningLineInner {
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +20,7 @@
 
 .white {
   background-color: #eae6e6;
+  color: #1b1a1c;
 }
 
 .line,

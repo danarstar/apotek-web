@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15%;
+  font-size: 5rem;
+}
+
+.icon {
+  color: #eae6e6;
+}
